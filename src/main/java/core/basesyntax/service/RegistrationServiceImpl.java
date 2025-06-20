@@ -24,7 +24,7 @@ public class RegistrationServiceImpl implements RegistrationService {
         }
 
         if (user.getLogin() == null || user.getLogin().length() < 6) {
-            throw new RuntimeException("Login is not valid, check the correctness of the "
+            throw new RegisterExtension("Login is not valid, check the correctness of the "
                    + "data entered");
         }
 
